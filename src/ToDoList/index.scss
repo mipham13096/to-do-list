@@ -1,0 +1,90 @@
+.todo-list {
+  width: 60%;
+  .title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 30px;
+  }
+  .content {
+    padding: 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    .search-bar {
+      margin-bottom: 20px;
+      height: 35px;
+      padding-left: 10px;
+    }
+    .to-do-list {
+      overflow: auto;
+      height: calc(100vh - 242px);
+      overflow-y: auto;
+      .to-do-item {
+        border: 1px solid #000;
+        margin-bottom: 20px;
+        .overview {
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .checkbox {
+          }
+          .to-do-name {
+            width: calc(100% - 180px);
+          }
+          .action-btn {
+            .detail-btn {
+              color: #fff;
+              cursor: pointer;
+              background-color: rgb(0, 167, 222);
+              border: none;
+              padding: 7px 12px;
+              margin-right: 10px;
+              border-radius: 4px;
+            }
+            .remove-btn {
+              cursor: pointer;
+              color: #fff;
+              background-color: rgb(255, 64, 0);
+              border: none;
+              padding: 7px 12px;
+              margin-right: 10px;
+              border-radius: 4px;
+            }
+          }
+        }
+        .detail {
+          padding: 10px;
+          border-top: 1px solid #000;
+        }
+      }
+    }
+  }
+  .bulk-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(217, 217, 217);
+    padding: 20px;
+    .action-btn {
+      .done-btn {
+        cursor: pointer;
+        color: #fff;
+        background-color: rgb(1, 120, 255);
+        border: none;
+        padding: 7px 12px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+      .remove-btn {
+        cursor: pointer;
+        color: #fff;
+        background-color: rgb(255, 64, 0);
+        border: none;
+        padding: 7px 12px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
